@@ -1,14 +1,13 @@
-integers_seq=input('Integers (separated by space):')
+integers_seq = input('Integers (separated by space):')
 print(integers_seq)
 integers = integers_seq.split()
 print(integers, type(integers))
-sum=0
+sum = 0
 for i in integers:
     sum = sum+int(i)
 print(sum)
-average=sum/len(integers)
+average = sum/len(integers)
 print(average)
-
 with open('qn02_data.txt', 'w') as output_file:
     output_file.write(f'list:{integers}\n')
     output_file.write(f'sum:{integers}\n')
